@@ -1,0 +1,7 @@
+jobs:
+  build:
+    steps:
+      - setup_remote_docker
+      - checkout
+      - run: docker build -t squareup/logquacious:$CIRCLE_BRANCH .
+
